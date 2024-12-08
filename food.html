@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finland</title>
+    <link rel="stylesheet" href="axiu.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <section class="axiu_image">
+        <div class="axiu_wrapper">
+            <h1>Various food in VietNam</h1>
+            <p>Vietnamese food is one of the most delicious foods in the world </p>
+            <span>post</span>
+            <form class="form_code">
+                <input class="post_code" id="tbuser" type="text" placeholder="What is your favorite food in VietNam???">
+                <button type="button" id="btn1">Submit</button>
+                <p class="output" id="output1"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="product_list_item">
+            <img class="img-responsive" src="banhmi.jpg" alt="">
+            <h2 class="product_heading">Banh Mi Sai Gon</h2>
+            <p>For the baguette:
+                <br> All-purpose flour, Water, Sugar, Salt, Yeast, Cooking oil
+                <br></br>
+                <br> For the filling (optional): Proteins (ham, cold cuts, pâté, grilled pork, char siu), Vegetables (cucumber, cilantro, pickled carrots, and daikon), Condiments (soy sauce, fish sauce, chili sauce, mayonnaise, butter)
+            </p>
+        </div>
+        <div class="product_list_item">
+            <img class="img-responsive" src="bunbo.jpg" alt="">
+            <h2 class="product_heading">Bun Bo Hue</h2>
+            <br>For the broth:
+                <br> Beef bones (or pork bones), Beef brisket, flank, Lemongrass, shallots, garlic, ginger, Fermented shrimp paste (mắm ruốc Huế), Chili powder, annatto oil, Salt, sugar, fish sauce, MSG
+                <br></br>
+                <br> For the noodles and garnish: Thick rice noodles, Fresh herbs (bean sprouts, shredded water spinach, banana blossom, basil, cilantro), Lime, fresh chili, green onions, sliced onion
+            </p>
+        </div>
+        <div class="product_list_item">
+            <img class="img-responsive" src="pho.jpg" alt="">
+            <h2 class="product_heading">Pho</h2>
+            <p>For the broth:
+                <br> Beef bones (or chicken bones for Pho Ga), Brisket, flank, or chicken, Onion, ginger (charred), Spices (cinnamon, star anise, cloves, cardamom, coriander seeds), Fish sauce, rock sugar, salt
+                <br> For the noodles and garnish: Rice noodles (Pho noodles), Fresh herbs (cilantro, Thai basil, green onions), Bean sprouts, Lime, fresh chili, hoisin sauce, Sriracha
+            </p>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments_section">
+        <h2>Comments</h2>
+        <div id="commentsContainer"></div>
+    </section>
+
+    <script>
+        const txt1 = document.getElementById('tbuser');
+        const btn1 = document.getElementById('btn1');
+        const output1 = document.getElementById('output1');
+        const commentsContainer = document.getElementById('commentsContainer');
+
+        // display the comment
+        function displayComment(commentText) {
+            const commentDiv = document.createElement('div');
+            commentDiv.classList.add('comment');
+
+            const time = new Date().toLocaleString();
+            commentDiv.innerHTML = `
+                <p><strong>Anonymous:</strong> ${commentText}</p>
+                <p><small>${time}</small></p>
+            `;
+            commentsContainer.prepend(commentDiv);  // Add new comment to bottom
+        }
+
+        // Event listener to handle the comment submission
+        btn1.addEventListener('click', function() {
+            const commentText = txt1.value.trim();
+            if (commentText) {
+                displayComment(commentText);  // Display comment
+                txt1.value = '';  // Clear input field after submission
+            }
+        });
+    </script>
+</body>
+</html>
