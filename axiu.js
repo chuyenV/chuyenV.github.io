@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Vietnam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="food.html">Vietnam di an</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="tips.html">Travel Tips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section>
+            <h1>Welcome to Vietnam</h1>
+            <p>Discover the beauty, culture, and cuisine of Vietnam. Start planning your adventure now!</p>
+            <a href="destinations.html" class="cta">Explore Destinations</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Travel to Vietnam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
