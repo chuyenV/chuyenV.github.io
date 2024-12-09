@@ -1,5 +1,5 @@
 @media only screen and (max-width: 2000px){
-.container .nav_bar{
+.container .nav_bar .Logo{
     width: 30%;
     margin-left: 19%;
 }
@@ -95,17 +95,16 @@ body{
 }
 
 .nav_bar ul li a#Home {
-    background: #BCCCDC ;
+    background: #D9EAFD ;
     color:#000000;
 
 }
 .nav_bar ul li a#Home:hover{
-    background: #D9EAFD;
+    background: #ffffff;
     color:#000000;
 }
-
 }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     
     .main-content{
         min-height:4700px;
@@ -124,8 +123,10 @@ body{
         width: auto;
         font-size:  130%;     
     }
+    .nav_bar .image{
+        width: 30%;
 
-
+    }
 .main-content p {
     font-family: 'Montserrat', sans-serif;
     padding-left: 30px;
@@ -164,8 +165,4 @@ body{
     background: #ffffff;
     color:#000000;
 }
-input[type=send] {
-    width: 100%;
-    margin-top: 0;
-  }
   }
