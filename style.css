@@ -1,5 +1,5 @@
 @media only screen and (max-width: 2000px){
-.container .nav_bar .Logo{
+.container .nav_bar{
     width: 30%;
     margin-left: 19%;
 }
@@ -126,12 +126,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #D9EAFD;
-}
-
-.container2 {
-  border-radius: 5px;
-  background-color: #D9EAFD;
-  padding: 10px;
 }
 
 .column {
