@@ -104,27 +104,6 @@ body{
     color:#000000;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=send] {
-  background-color: #BCCCDC;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=send]:hover {
-  background-color: #D9EAFD;
-}
-
 }
   @media only screen and (max-width: 600px) {
     
