@@ -103,9 +103,7 @@
         background: #ffffff;
         color:#000000;
     }
-* {
-  box-sizing: border-box;
-}
+
 
 input[type=text], select, textarea {
   width: 100%;
