@@ -51,7 +51,7 @@
       border: 1px solid #000000;
       background: #D9EAFD  ;
       padding: 20px;
-      font-family: 'Pacifico', cursive;
+      font-family: 'Montserrat', sans-serif;
       line-height: 123px;
       text-align: center;
       font-size: 50px;
@@ -74,29 +74,29 @@
 body{
     margin: auto;
     background: #efefef;
-    font-family: arial;
+    font-family: 'Montserrat', sans-serif;
     background-color: #9AA6B2 ;
 }
 .main-content p {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 30px;
     padding-right: 20px;
     font-size: larger;
 }
 .main-content h1{
-    font-family: 'Pacifico', cursive; 
+    font-family: 'Montserrat', sans-serif; 
     padding-left: 30px; 
     padding-top: 30px;
 }
 .main-content h2{
-font-family: 'Pacifico', cursive; 
+font-family: 'Montserrat', sans-serif; 
 text-align: center;
 }
 .main-content h4{
     padding-left: 70px;
 }
 .Navigateinpage ul{
-    font-family: 'Pacifico', cursive;;
+    font-family: 'Montserrat', sans-serif;;
 }
 .main-content button{
     text-decoration: none;
